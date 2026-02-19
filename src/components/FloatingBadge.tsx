@@ -44,7 +44,7 @@ export default function FloatingBadge() {
     <>
       {/* Floating button — hidden on /contact */}
       <motion.button
-        onClick={() => router.push('/contact')}
+        onClick={() => { router.push('/contact'); window.scrollTo({ top: 0 }) }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: pathname === '/contact' ? 0 : 1, y: pathname === '/contact' ? 20 : 0, pointerEvents: pathname === '/contact' ? 'none' : 'auto' }}
         transition={{ duration: 0.6, delay: 1.0 }}

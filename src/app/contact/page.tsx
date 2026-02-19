@@ -10,7 +10,7 @@ export default function ContactPage() {
     name: '',
     email: '',
     company: '',
-    budget: '',
+
     message: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -94,7 +94,7 @@ export default function ContactPage() {
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full bg-transparent border-b border-border py-3 text-text-primary focus:border-text-primary outline-none transition-colors"
+                        className="w-full bg-bg-secondary border-b border-border-hover px-3 py-3 text-text-primary focus:border-text-primary outline-none transition-colors"
                         placeholder="John Doe"
                       />
                     </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full bg-transparent border-b border-border py-3 text-text-primary focus:border-text-primary outline-none transition-colors"
+                        className="w-full bg-bg-secondary border-b border-border-hover px-3 py-3 text-text-primary focus:border-text-primary outline-none transition-colors"
                         placeholder="john@company.com"
                       />
                     </div>
@@ -122,25 +122,9 @@ export default function ContactPage() {
                         type="text"
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        className="w-full bg-transparent border-b border-border py-3 text-text-primary focus:border-text-primary outline-none transition-colors"
+                        className="w-full bg-bg-secondary border-b border-border-hover px-3 py-3 text-text-primary focus:border-text-primary outline-none transition-colors"
                         placeholder="Company Inc."
                       />
-                    </div>
-                    <div>
-                      <label className="block text-text-tertiary text-xs uppercase tracking-wider mb-3">
-                        Budget
-                      </label>
-                      <select
-                        value={formData.budget}
-                        onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        className="w-full bg-transparent border-b border-border py-3 text-text-primary focus:border-text-primary outline-none transition-colors cursor-pointer"
-                      >
-                        <option value="" className="bg-bg-primary text-text-primary">Select budget</option>
-                        <option value="5-10k" className="bg-bg-primary text-text-primary">$5,000 - $10,000</option>
-                        <option value="10-25k" className="bg-bg-primary text-text-primary">$10,000 - $25,000</option>
-                        <option value="25-50k" className="bg-bg-primary text-text-primary">$25,000 - $50,000</option>
-                        <option value="50k+" className="bg-bg-primary text-text-primary">$50,000+</option>
-                      </select>
                     </div>
                   </div>
 
@@ -153,7 +137,7 @@ export default function ContactPage() {
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full bg-transparent border-b border-border py-3 text-text-primary focus:border-text-primary outline-none transition-colors resize-none"
+                      className="w-full bg-bg-secondary border-b border-border-hover px-3 py-3 text-text-primary focus:border-text-primary outline-none transition-colors resize-none"
                       placeholder="Describe your project, goals, and timeline..."
                     />
                   </div>
@@ -231,10 +215,8 @@ export default function ContactPage() {
                   Follow Us
                 </h3>
                 <div className="flex gap-6">
-                  <a href="#" className="text-text-secondary hover:text-text-primary transition-colors">Instagram</a>
                   <a href="#" className="text-text-secondary hover:text-text-primary transition-colors">LinkedIn</a>
-                  <a href="#" className="text-text-secondary hover:text-text-primary transition-colors">X</a>
-                  <a href="#" className="text-text-secondary hover:text-text-primary transition-colors">Dribbble</a>
+                  <a href="#" className="text-text-secondary hover:text-text-primary transition-colors">Facebook</a>
                 </div>
               </div>
             </motion.div>

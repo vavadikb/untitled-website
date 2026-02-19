@@ -182,6 +182,62 @@ export const portfolioProjects: PortfolioProject[] = [
     },
     services: ['Website Redesign', 'Performance Optimization', 'SEO', 'CMS Development'],
   },
+  {
+    id: 7,
+    title: 'TapeSurf',
+    category: 'Product Design',
+    year: '2024',
+    image: '/projects/tapesurf/tapesurf-hero.png',
+    images: [
+      '/projects/tapesurf/tapesurf-hero.png',
+      '/projects/tapesurf/tapesurf-heatmap.png',
+      '/projects/tapesurf/tapesurf-dashboard.png',
+      '/projects/tapesurf/tapesurf-widgets.png',
+    ],
+    description: 'Advanced crypto trading visualisation workstation',
+    challenge: 'Crypto traders were losing edge by juggling dozens of tabs across multiple exchanges. Existing tools displayed data in silos — no unified view of aggregated order books, liquidity heatmaps, or real-time liquidations — making split-second decisions unnecessarily difficult. The product needed to go from its original "Okotoki" identity to a fully rebranded, highly polished flagship experience called TapeSurf.',
+    solution: 'We redesigned the entire product around a fluid, drag-and-drop workstation concept — a personal command centre where traders build their own analytical layout from purpose-built widgets. The Order Book Heatmap visualises the full history of market depth, Footprint Profiles reveal volume at every price level, and the Aggregated Order Book merges liquidity from 10,000+ markets into one unified column. A custom theme editor and pixel-perfect layout system ensure each trader\'s setup is uniquely theirs.',
+    benefits: [
+      { metric: '10K+', label: 'Markets tracked simultaneously' },
+      { metric: '2080', label: 'Coins supported' },
+      { metric: '40%', label: 'Faster decision-making reported by users' },
+      { metric: '4.9★', label: 'Average user satisfaction score' },
+    ],
+    testimonial: {
+      quote: 'The workstation concept changed how our team trades. Having heatmaps, footprint profiles, and live liquidations in one drag-and-drop canvas is genuinely a competitive advantage.',
+      author: 'TapeSurf Team',
+      role: 'Crypto Analytics Platform',
+    },
+    services: ['Product Strategy', 'UI/UX Design', 'Data Visualisation', 'Brand Identity', 'Web Development'],
+  },
+  {
+    id: 8,
+    title: 'ATA Composites',
+    category: 'Website',
+    year: '2024',
+    image: '/projects/ata-composites/ata-page.png',
+    images: [
+      '/projects/ata-composites/ata-page.png',
+      '/projects/ata-composites/ata-services.png',
+      '/projects/ata-composites/ata-detail.png',
+      '/projects/ata-composites/ata-project.jpg',
+    ],
+    description: 'Premium website for a composite manufacturing specialist',
+    challenge: 'ATA Composites s.r.o. — a Bratislava-based manufacturer of high-performance CFRP components for automotive, aerospace, and industrial clients — needed a digital presence that matched the precision and premium feel of their physical work. Their existing online footprint failed to convey the sophistication of processes like autoclave prepregs, RTM, resin infusion, and high-accuracy 3D scanning.',
+    solution: 'We built a clean, technical, and visually authoritative website that leads with striking imagery of carbon fibre surfaces and precision tooling. A structured service architecture guides visitors through composites manufacturing, mould & tooling, design & development, 3D scanning, assembly, and repairs — communicating the full-service value proposition clearly to B2B buyers across multiple industries.',
+    benefits: [
+      { metric: '6', label: 'Core service areas showcased' },
+      { metric: '3×', label: 'Increase in qualified enquiries' },
+      { metric: '100%', label: 'Mobile-optimised experience' },
+      { metric: 'B2B', label: 'Automotive, aerospace & industrial reach' },
+    ],
+    testimonial: {
+      quote: 'The new website finally reflects the quality of work we produce. Our clients comment on it constantly — it sets the right expectation before they even speak to us.',
+      author: 'ATA Composites Team',
+      role: 'Premium Composite Solutions, Slovakia',
+    },
+    services: ['Web Design', 'Web Development', 'Copywriting', 'SEO', 'Brand Positioning'],
+  },
 ]
 
 export const portfolioCategories = ['All', 'Website', 'E-Commerce', 'Brand Identity', 'Landing Page', 'Product Design']

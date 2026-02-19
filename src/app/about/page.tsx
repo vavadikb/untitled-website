@@ -4,33 +4,6 @@ import { motion } from 'framer-motion'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
-const team = [
-  {
-    name: 'Alex Chen',
-    role: 'Founder & Creative Director',
-    bio: 'Former design lead at top tech companies. Passionate about creating meaningful digital experiences.',
-    initials: 'AC',
-  },
-  {
-    name: 'Maria Santos',
-    role: 'Lead Developer',
-    bio: 'Full-stack engineer with 10+ years of experience building scalable web applications.',
-    initials: 'MS',
-  },
-  {
-    name: 'James Wilson',
-    role: 'Design Lead',
-    bio: 'Award-winning designer specializing in brand identity and user experience.',
-    initials: 'JW',
-  },
-  {
-    name: 'Sarah Kim',
-    role: 'Project Manager',
-    bio: 'Expert in agile methodologies, ensuring every project is delivered on time and on budget.',
-    initials: 'SK',
-  },
-]
-
 const values = [
   {
     title: 'Speed',
@@ -151,53 +124,6 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-text-secondary leading-relaxed">
                   {value.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-24 md:py-32 border-t border-border">
-        <div className="px-6 md:px-12 lg:px-24">
-          <motion.div
-            className="mb-16"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-text-tertiary text-xs tracking-[0.3em] uppercase font-mono mb-4">
-              The People
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl font-black uppercase tracking-tight">
-              Our Team
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, i) => (
-              <motion.div
-                key={member.name}
-                className="group"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className="aspect-[3/4] bg-text-primary mb-6 flex items-center justify-center">
-                  <span className="font-display text-[4rem] md:text-[5rem] font-black text-bg-primary tracking-tighter">
-                    {member.initials}
-                  </span>
-                </div>
-                <h3 className="font-display text-lg font-bold uppercase tracking-tight">
-                  {member.name}
-                </h3>
-                <p className="text-text-tertiary text-sm uppercase tracking-wider mt-1">
-                  {member.role}
-                </p>
-                <p className="text-text-secondary text-sm mt-4 leading-relaxed">
-                  {member.bio}
                 </p>
               </motion.div>
             ))}

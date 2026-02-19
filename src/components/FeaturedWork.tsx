@@ -22,7 +22,7 @@ function ProjectCard({ project, onClick, index }: { project: PortfolioProject, o
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-105 [filter:grayscale(100%)] group-hover:[filter:grayscale(0%)]"
+            className="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-105"
           />
         </div>
 

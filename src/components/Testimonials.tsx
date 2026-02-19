@@ -108,7 +108,7 @@ export default function Testimonials() {
           </div>
 
           {/* Right side - Quote */}
-          <div className="lg:col-span-9 relative min-h-[300px] flex items-center">
+          <div className="lg:col-span-9 relative min-h-[300px] flex items-center overflow-hidden">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={current}

@@ -3,10 +3,8 @@
 import Link from 'next/link'
 
 const socialLinks = [
-  { label: 'Instagram', href: '#' },
   { label: 'LinkedIn', href: '#' },
-  { label: 'X', href: '#' },
-  { label: 'Dribbble', href: '#' },
+  { label: 'Facebook', href: '#' },
 ]
 
 export default function Footer() {

@@ -99,7 +99,7 @@ export default function WorkPage() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-105 [filter:grayscale(100%)] group-hover:[filter:grayscale(0%)]"
+                      className="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-105"
                     />
                   </div>
 
@@ -152,15 +152,12 @@ export default function WorkPage() {
             <p className="text-text-secondary text-lg mb-8">
               Let's create something great together.
             </p>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent('openContactForm'))}
-              className="btn-primary"
-            >
+            <Link href="/contact" className="btn-primary inline-flex items-center gap-3">
               <span>Get in Touch</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>

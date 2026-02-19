@@ -2,11 +2,17 @@ import type { Metadata } from 'next'
 import './globals.css'
 import ThemeProvider from '@/components/ThemeProvider'
 import FloatingBadge from '@/components/FloatingBadge'
+import CookieBanner from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
   title: 'untitled. — Web Development Agency',
   description: 'We create bold digital experiences. Design, development, and strategy for brands that refuse to blend in.',
   keywords: ['web design', 'web development', 'branding', 'digital agency', 'UI/UX design', 'creative studio'],
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
@@ -33,6 +39,7 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="dark">
           {children}
           <FloatingBadge />
+          <CookieBanner />
         </ThemeProvider>
         <div className="noise-overlay" />
       </body>
