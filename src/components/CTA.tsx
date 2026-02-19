@@ -91,10 +91,10 @@ export default function CTA() {
               Or reach us directly
             </p>
             <a
-              href="mailto:hello@untitled.studio"
+              href="mailto:hello@untitled.it.com"
               className="text-text-primary text-2xl md:text-3xl font-display font-bold hover:text-text-secondary transition-colors"
             >
-              hello@untitled.studio
+              hello@untitled.it.com
             </a>
           </motion.div>
         </div>

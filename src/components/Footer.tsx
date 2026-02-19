@@ -24,10 +24,10 @@ export default function Footer() {
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-8">
                 <span className="text-text-secondary w-32">Worldwide</span>
                 <a
-                  href="mailto:hello@untitled.studio"
+                  href="mailto:hello@untitled.it.com"
                   className="text-text-primary hover:text-text-secondary transition-colors underline"
                 >
-                  hello@untitled.studio
+                  hello@untitled.it.com
                 </a>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Footer() {
               Privacy Policy
             </Link>
             <span className="text-text-tertiary text-sm">
-              © 2024 – {new Date().getFullYear()} untitled.
+              © {new Date().getFullYear()} untitled. — Part of &ldquo;WhaleGroup&rdquo; (Poland, NIP&nbsp;1133186197)
             </span>
           </div>
         </div>

@@ -144,10 +144,10 @@ export default function Navigation() {
                     Email
                   </p>
                   <a
-                    href="mailto:hello@untitled.studio"
+                    href="mailto:hello@untitled.it.com"
                     className="text-text-primary text-lg hover:text-text-secondary transition-colors"
                   >
-                    hello@untitled.studio
+                    hello@untitled.it.com
                   </a>
                 </motion.div>
               </div>

@@ -1,9 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useRouter, usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function FloatingBadge() {
+  const router = useRouter()
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
 
   // Listen for custom event to open the form
@@ -39,13 +42,14 @@ export default function FloatingBadge() {
 
   return (
     <>
-      {/* Floating button */}
+      {/* Floating button — hidden on /contact */}
       <motion.button
-        onClick={() => setIsOpen(true)}
+        onClick={() => router.push('/contact')}
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: pathname === '/contact' ? 0 : 1, y: pathname === '/contact' ? 20 : 0, pointerEvents: pathname === '/contact' ? 'none' : 'auto' }}
         transition={{ duration: 0.6, delay: 1.0 }}
-        className="fixed bottom-8 right-8 md:bottom-12 md:right-12 z-50 group"
+        className={`fixed bottom-8 right-8 md:bottom-12 md:right-12 z-50 group${pathname === '/contact' ? ' pointer-events-none' : ''}`}
+        aria-hidden={pathname === '/contact'}
       >
         <div className="flex items-center gap-3 px-5 py-3 bg-text-primary text-bg-primary border border-text-primary hover:bg-transparent hover:text-text-primary transition-all duration-300">
           <span className="text-xs md:text-sm font-medium tracking-[0.1em] uppercase">

@@ -4,7 +4,7 @@ import ThemeProvider from '@/components/ThemeProvider'
 import FloatingBadge from '@/components/FloatingBadge'
 
 export const metadata: Metadata = {
-  title: 'untitled studio — Digital Design Agency',
+  title: 'untitled. — Web Development Agency',
   description: 'We create bold digital experiences. Design, development, and strategy for brands that refuse to blend in.',
   keywords: ['web design', 'web development', 'branding', 'digital agency', 'UI/UX design', 'creative studio'],
 }
