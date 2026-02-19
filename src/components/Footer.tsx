@@ -78,6 +78,12 @@ export default function Footer() {
             >
               Privacy Policy
             </Link>
+            <Link
+              href="/terms"
+              className="text-text-secondary text-sm hover:text-text-primary transition-colors"
+            >
+              Terms of Service
+            </Link>
             <span className="text-text-tertiary text-sm">
               © {new Date().getFullYear()} untitled. — Part of &ldquo;WhaleGroup&rdquo; (Poland, NIP&nbsp;1133186197)
             </span>
