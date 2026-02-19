@@ -59,6 +59,19 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   <p className="text-text-secondary text-xl md:text-2xl mt-6 max-w-2xl">
                     {project.description}
                   </p>
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 mt-8 px-6 py-3 bg-text-primary text-bg-primary text-sm uppercase tracking-[0.2em] hover:bg-transparent hover:text-text-primary border border-text-primary transition-all duration-300"
+                    >
+                      <span>Visit Website</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </a>
+                  )}
                 </div>
 
                 {/* Challenge & Solution */}

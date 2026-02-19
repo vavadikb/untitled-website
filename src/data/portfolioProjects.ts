@@ -11,6 +11,7 @@ export interface PortfolioProject {
   benefits: { metric: string; label: string }[]
   testimonial: { quote: string; author: string; role: string }
   services: string[]
+  url?: string
 }
 
 export const portfolioProjects: PortfolioProject[] = [
@@ -209,6 +210,7 @@ export const portfolioProjects: PortfolioProject[] = [
       role: 'Crypto Analytics Platform',
     },
     services: ['Product Strategy', 'UI/UX Design', 'Data Visualisation', 'Brand Identity', 'Web Development'],
+    url: 'https://tapesurf.com',
   },
   {
     id: 8,
@@ -237,6 +239,64 @@ export const portfolioProjects: PortfolioProject[] = [
       role: 'Premium Composite Solutions, Slovakia',
     },
     services: ['Web Design', 'Web Development', 'Copywriting', 'SEO', 'Brand Positioning'],
+    url: 'https://atacomposites.com',
+  },
+  {
+    id: 9,
+    title: 'Faireez',
+    category: 'Website',
+    year: '2024',
+    image: '/projects/faireez/faireez-home.png',
+    images: [
+      '/projects/faireez/faireez-home.png',
+      '/projects/faireez/faireez-residents-hero.png',
+      '/projects/faireez/faireez-partners.png',
+      '/projects/faireez/faireez-features.png',
+    ],
+    description: 'Marketing website for a daily housekeeping platform serving residential buildings across the US',
+    challenge: 'Faireez — a New York-based proptech startup reinventing in-building housekeeping — needed a marketing website that could simultaneously convert two very different audiences: residents seeking a personal cleaning service, and landlords looking to add a revenue-generating amenity to their properties. The brand had to feel premium yet approachable, and clearly communicate a flexible, chore-based pricing model that breaks from the traditional hourly cleaning market.',
+    solution: 'We designed and built a dual-audience website structured around two clearly segmented user journeys — "For Residents" and "For Landlords" — each with its own value proposition, feature set, and conversion path. A bold, clean visual language with a signature pink accent drives energy and trust. Interactive pricing tiers, a real-time booking flow, and social proof from marquee landlords like Silverstein Properties, Tay Investments, and BNE reinforce credibility and drive sign-ups.',
+    benefits: [
+      { metric: '8,500+', label: 'Resident reviews integrated' },
+      { metric: '2×', label: 'Conversion uplift vs. previous site' },
+      { metric: 'Top', label: 'US landlords signed as partners' },
+      { metric: '4', label: 'Flexible pricing plans showcased' },
+    ],
+    testimonial: {
+      quote: 'Our residents choose Faireez every month to take care of their daily chores — the website makes the value immediately obvious and the booking flow is frictionless.',
+      author: 'Gil Eyal',
+      role: 'Head of Marketing & Innovation, Silverstein Properties',
+    },
+    services: ['Web Design', 'Web Development', 'UX Strategy', 'Copywriting', 'Conversion Optimisation'],
+    url: 'https://faireez.com',
+  },
+  {
+    id: 10,
+    title: 'ModelFA',
+    category: 'Website',
+    year: '2024',
+    image: '/projects/modelfa/modelfa-hero.png',
+    images: [
+      '/projects/modelfa/modelfa-hero.png',
+      '/projects/modelfa/modelfa-page.png',
+      '/projects/modelfa/modelfa-logo.png',
+    ],
+    description: 'Marketing and coaching platform helping financial advisors unlock client acquisition growth',
+    challenge: 'ModelFA — a coaching and marketing consultancy built exclusively for financial advisors — needed a website that spoke with authority to a skeptical, high-achieving audience. Financial advisors are bombarded with generic marketing promises; the site needed to cut through that noise, clearly segment its offer by AUM tier ($0–50M up to $1B+), and convert visitors from awareness to booked calls without feeling like another sales funnel.',
+    solution: 'We built a clean, conversion-focused website structured around three core service pillars — Coaching, Marketing, and Advisor Development — each with a dedicated pathway. The architecture segments visitors by practice size, guiding each advisor to the most relevant offer. Social proof is woven throughout via advisor testimonials, AUM growth metrics, and referral statistics, establishing credibility at every scroll.',
+    benefits: [
+      { metric: '3×', label: 'Increase in qualified discovery calls' },
+      { metric: '4', label: 'AUM tiers served ($0M to $1B+)' },
+      { metric: '↑', label: 'Referral & client acquisition growth' },
+      { metric: '100%', label: 'Niche-focused positioning' },
+    ],
+    testimonial: {
+      quote: 'The new site finally matches the level of the advisors we work with. It communicates our value instantly and the segmented journey means every visitor finds exactly what they need.',
+      author: 'ModelFA Team',
+      role: 'Coaching & Marketing for Financial Advisors',
+    },
+    services: ['Web Design', 'Web Development', 'UX Strategy', 'Conversion Copywriting', 'Brand Positioning'],
+    url: 'https://www.modelfa.com',
   },
 ]
 
