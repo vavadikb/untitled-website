@@ -82,7 +82,7 @@ export default function FeaturedWork() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              We design
+              We create
               <br />
               <span className="text-stroke">everything</span>
             </motion.h2>
