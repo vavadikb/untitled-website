@@ -16,14 +16,28 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
+  const [submitError, setSubmitError] = useState<string | null>(null)
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError(null)
 
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+      if (!res.ok) throw new Error('Failed to send')
+
+      setIsSubmitted(true)
+    } catch {
+      setSubmitError('Something went wrong. Please try again or email us directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -141,6 +155,10 @@ export default function ContactPage() {
                       placeholder="Describe your project, goals, and timeline..."
                     />
                   </div>
+
+                  {submitError && (
+                    <p className="text-red-500 text-sm">{submitError}</p>
+                  )}
 
                   <div>
                     <button
